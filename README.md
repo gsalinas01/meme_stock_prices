@@ -30,3 +30,38 @@
 Bonus Neural Network idea #1
 1. Create a predictive model to predict TSLA % change per day depending all 3 variables (SPY, Elons Tweets, Total TSLA Tweets) to figure out which one has the highest correlation (this will be used using the eigen values/vector method aka PCA) 
 
+
+Presentation Rubric 
+Overall Story: 
+
+
+
+Team members have drafted their 
+project, including the following: 
+✓ Selected topic:
+    1.  Are meme stock prices affected by tweet count? Specifically TSLA
+
+✓ Reason why they selected their topic:
+    1.  Meme stock popularity has risen within the last 2 years.  Our project wants to figure out if tweet chatter correlate to price % change of this stocks or are these stocks simply correlate to the S&P500 index, like the majority of all other stocks.
+
+✓ Description of their source of data:
+    1. Historical Stock Data: 
+        1. For Historical stock data we used two(2) methods:  A freee yahoo API web Url and using yfiance python library.  Both methods used the same yahoo API, and the API had data limits as follows:  limits of hourly data was limited to 7 days, while daily historical data was limited to 5 years. 
+
+    2. Tweet Chatter count Data:
+        1.  For historical tweeter count data this project used Twarc python library.  This library uses tweeter API to collect data.  The limits of the tweeter api limited us to hourly data, for up to 7 days of tweeter count data for a specific query. 
+
+
+✓ Questions they hope to answer with 
+the data:
+    1.  What has the strongest correlation to TSLA (meme stock) price, SP500 or tweet post count?
+        1.  First we will show linear regression models for the year, but also explain that this type of model is limited since this is just long term trend. (TSLA and SPY, 1 year data)
+
+        2. Second, Show a Logistical regression model, and realized that it has a low accuracy rating. ((TSLA and SPY (tweeter count too?), 1 year data))
+
+        3. Third, PCA NN model and show how it has a higher accuracy success.  And now you will get the eigen value/vectors for SPY and tweeter count to determien which one has the highest correlation. (TSLA, SPY, tweeter count, 5 day data hourly)
+        
+
+Note: The content does not yet need to 
+be in the form of a presentation; text in 
+
