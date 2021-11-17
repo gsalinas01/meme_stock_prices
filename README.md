@@ -1,27 +1,31 @@
 # meme_stock_prices
-
+Presentation: [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRn1nLammvhjtL82N-8cUi9kMMcEskN5oxjqiU6lPaGUr0OKvJq94ZxSkmMC6jOHQNZ5nLYIMFumxyG/pub?start=true&loop=true&delayms=3000)
 ## Git Hub Branches and Communication 
-1. Team Members and Branches
+Team members:
+   * Guadalupe Salinas: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/twitter_practice_api_pull)
+   * Ricardo Saldana: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/Ricky_Stock_Hist_query)
+   * JT Carter: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/Linear_Regression_Practice)
+   * Stone Leiker: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/Stone_Memestock)
 
 ## Background
-Meme stocks have been gaining increasing popularity in the past two years and have generated investors both profits and losses. The rise of social media fandom and the sharing of memes about certain stocks creates online chatter than can in theory catapult stock up and vise versa. 
+Meme stocks have been gaining popularity in the last two years and have generated investors both profits and losses. The rise of social media fandom and its accompanying chatter has been named the culprit of major catapults in stocks such as GME, TSLA, AMC, and many others. 
 
-## Selected Topic
-In this project we will try to answer the question, can we predict if a meme stock will go up or down based on the social media hype. Specifically, we will be analyzing Twitter data to measure how often Tesla stock is mentioned. 
+## Overview
+In this project we will test whether we can predict if the price of a meme stock will increase or decrease based on the social media hype around it, that is the conversations invoving their mention online. Specifically, we will be analyzing Twitter data to measure how often Tesla stock is mentioned in a 7 day period, and merging this data with the stock price counterpart on an hourly basis. 
 As a baseline we will see if we can create the same results using a Stock index, such as the S&P500 index,  in lieu of the Twitter data. 
 
 ## Source data 
 1. Historical Stock Data: 
-For Historical stock data we used Yfiance API python library.  With this python API library we were able to extra historical stock data but the API had data limits as follows:  limits of hourly data was limited to the previous 7 days.  
+For the stock data we used the Yfiance API python library.  With this python API library we were able to extract historical stock data, however we encountered the following limitation:  hourly data was limited to the previous 7 days.  
     1.  Data Acquire (Hourly Stock Data): % Stock Price change, Volume of stock exchanges for SP500 and TSLA stocks. 
 
-2. Tweet Chatter count Data:
-For historical tweeter count data this project used the Twarc API python library.  This library uses twitter API to collect data.  The twitter api limited us to hourly data, for up to 7 days of tweeter count data for a specific query. 
+2. Twitter - TSLA stock mention:
+For twitter TSLA data we used the Twarc API python library.  This library uses the Twitter API to collect data.  The Twitter API also limited us to hourly data, for the previous 7 days. 
     1. Data Acquire (Hourly Tweet Count Data): Tweets that mentioned “#TSLA”, the common way to mention a stock ticker. 
 
 ## Questions To Answer 
-1.  Will a logistical regression model show that tweets count affect the price of TSLA. 
-2.  What has a bigger impact on the price of a meme stock such as TSLA. 
+1.  Will a logistical regression model show that the quantity of Tweets mentioning #TSLA affect the price of Tesla stock? 
+2.  What has a bigger impact on the price of a meme stock such as TSLA? (Tweet mention count data vs. S&P500)
 
 ## Results 
 1. Logistical Regression (Supervised Machine Learning)
