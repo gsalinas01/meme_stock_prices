@@ -1,5 +1,5 @@
 # meme_stock_prices
-
+Presentation: [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRn1nLammvhjtL82N-8cUi9kMMcEskN5oxjqiU6lPaGUr0OKvJq94ZxSkmMC6jOHQNZ5nLYIMFumxyG/pub?start=true&loop=true&delayms=3000)
 ## Git Hub Branches and Communication 
 Team members:
    * Guadalupe Salinas: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/twitter_practice_api_pull)
@@ -8,7 +8,7 @@ Team members:
    * Stone Leiker: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/Stone_Memestock)
 
 ## Background
-Meme stocks have been gaining increasing popularity in the last two years and have generated investors both profits and losses. The rise of social media fandom and its accompanying chatter has been named the culprit of major catapults in stocks such as GME, TSLA, AMC, and many others. 
+Meme stocks have been gaining popularity in the last two years and have generated investors both profits and losses. The rise of social media fandom and its accompanying chatter has been named the culprit of major catapults in stocks such as GME, TSLA, AMC, and many others. 
 
 ## Overview
 In this project we will test whether we can predict if the price of a meme stock will increase or decrease based on the social media hype around it, that is the conversations invoving their mention online. Specifically, we will be analyzing Twitter data to measure how often Tesla stock is mentioned in a 7 day period, and merging this data with the stock price counterpart on an hourly basis. 
