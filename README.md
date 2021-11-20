@@ -21,15 +21,29 @@ For the stock data we used the Yfiance API python library.  With this python API
 
 2. Twitter - TSLA stock mention:
 For twitter TSLA data we used the Twarc API python library.  This library uses the Twitter API to collect data.  The Twitter API also limited us to hourly data, for the previous 7 days. 
-    1. Data Acquire (Hourly Tweet Count Data): Tweets that mentioned “#TSLA”, the common way to mention a stock ticker. 
+    1. Data Acquire (Hourly Tweet Count Data): Tweets that mentioned “#TSLA”, the common way to mention a stock ticker.
+      * This analysis includes tweet data from the past 7 days at the start of the project. 
+      * Data was extracted from twitter API, placed into a jupyter notebook dataframe, and cleaned up to include the date, hour, and tweet counts for the respective time frame. 
+      * 
 
 ## Questions To Answer 
 1.  Will a logistical regression model show that the quantity of Tweets mentioning #TSLA affect the price of Tesla stock? 
 2.  What has a bigger impact on the price of a meme stock such as TSLA? (Tweet mention count data vs. S&P500)
 
 ## Results 
-1. Logistical Regression (Supervised Machine Learning)
-2. 
+1. Linear Regression (because a linear regression was performed, however unfitting it was for our overall story purposes)
+  * The linear regression models were performed on the following parameters:
+    * Tesla percent day changes vs Tesla tweet counts
+      * Results: Explanation
+      * 
+    * Tesla percent day changes vs SPY percent day changes
+      * Results: Explanation 
+      * 
+    * & an overall volume vs Tesla percent day changes
+      * Results:
+      *         
+3. Logistical Regression (Supervised Machine Learning)
+4. 
 
 What has the strongest correlation to TSLA (meme stock) price, SP500 or tweet post count?
         1.  First, show a Logistical regression model, and realized that it has a low accuracy rating. (y= % change, x=TSLA volume, SPY volume, spy % change, tweeter count too (1 week data)
