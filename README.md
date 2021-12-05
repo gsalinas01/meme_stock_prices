@@ -1,6 +1,8 @@
 # meme_stock_prices
 Presentation: [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vRn1nLammvhjtL82N-8cUi9kMMcEskN5oxjqiU6lPaGUr0OKvJq94ZxSkmMC6jOHQNZ5nLYIMFumxyG/pub?start=true&loop=true&delayms=3000)
 ## Git Hub Branches and Communication 
+Our main communication took place in the Slack messenger app, when a more detailed question/task/troubleshooting needed to be explained a video conference was set up through skype.  Each member worked on their own separate github branch, and in individual files (This avoided excessive overlap during merging).  When files needed to be combined the main contributor will be in charge of merging the files and the person with the squared role would confirm the merge. 
+
 Team members:
    * Guadalupe Salinas: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/twitter_practice_api_pull)
    * Ricardo Saldana: [branch](https://github.com/gsalinas01/meme_stock_prices/tree/Ricky_Stock_Hist_query)
